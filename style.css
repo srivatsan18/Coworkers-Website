@@ -1,0 +1,14 @@
+#center
+{
+    margin: auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#cent
+{
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

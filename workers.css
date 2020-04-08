@@ -1,0 +1,9 @@
+#center
+{
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:rgb(128, 68, 0);
+    font-weight: bolder;
+}

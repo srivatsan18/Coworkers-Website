@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>CoWorkers</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <script type="text/javascript">
+
+        function validate()
+        {
+            let username=document.getElementById("Username");
+            let password=document.getElementById("password");
+            if(username.value==="srivatsan" && password.value==="learning")
+            {
+                alert("Loged In");
+                 true;
+            }
+            else if(username.value==="srivatsan" &&password.value!=="learning")
+            {
+                alert("Incorrect Password");
+                return false;
+            }
+            else if(username.value!=="srivatsan")
+            {
+                alert("User Account doesn't exist");
+                return false;
+            }
+            else if(username.value===""||password.value==="")
+            {
+                    alert("No Blank Spaces Allowed");
+                    return false;
+            }
+
+        }
+    </script>
+<body>
+        <img id="center" src="main.jpg">
+    <form id="cent" onsubmit= " return validate()" action="coworkers.html">
+        <label for="Username">Username:</label>
+        <input type=text required id="Username" placeholder="username" name="Username"><br><br>
+        <label for="password" >Password:</label>
+        <input type=password required id="password" placeholder="Password" name="password"><br><br>
+        <input id="sub.btn" type=submit value=Submit>
+        <br>
+        <input type="checkbox" value="Keep me Signed In" name="Keep me Signed In">Keep me Signed In<br><br> 
+        Forgot Password <a href="passwor.html">Click Here</a>
+    </form>
+     
+</body>
+</html>
